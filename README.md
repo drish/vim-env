@@ -1,3 +1,5 @@
+#WIP
+
 Automatically build and install my personal vim environment.
 
 [vim-go](https://github.com/fatih/vim-go)
