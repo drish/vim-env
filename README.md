@@ -6,6 +6,4 @@ Build and install my personal vim environment.
 
 [vim-pathogen](https://github.com/tpope/vim-pathogen)
 
-[nerd-tree](https://github.com/scrooloose/nerdtree)
-
 [neocomplete](https://github.com/Shougo/neocomplete.vim)

@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 check_vim() {
 	type vim >/dev/null 2>&1 || { echo >&2 "vim is not installed.  Aborting."; exit 1; }
 	# brew install vim --with-lua
@@ -13,10 +12,6 @@ mkdirs() {
 
 install_go_vim () {
 	echo "installing go_vim"
-}
-
-install nerdtree() {
-	echo "installing nerdtree"		
 }
 
 install_pathogen() {
