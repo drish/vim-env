@@ -28,3 +28,5 @@ let g:neocomplete#enable_smart_case = 1
 :map <S-{> vi{
 :map <S-(> vi(
 :map <S-[> vi[
+
+:set number
