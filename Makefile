@@ -1,0 +1,5 @@
+check:
+	
+
+install: check
+
