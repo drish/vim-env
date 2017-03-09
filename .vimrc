@@ -1,32 +1,42 @@
-execute pathogen#infect()
-syntax enable
-filetype plugin indent on
-set background=dark
-colorscheme solarized
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
-map <C-n> :NERDTreeToggle<CR>
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'dracula/vim'
+Plugin 'Shougo/neocomplete'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'scrooloose/nerdcommenter'
+
+call vundle#end()            " required
+
+filetype plugin indent on    " required
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+set incsearch
+
+set number
+set mouse=a
+set timeoutlen=1000 ttimeoutlen=0
+
+set background=dark
+syntax on
+color dracula
+
 set backspace=indent,eol,start
 
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 
-:map <C-a> GVgg
-:map <C-s> :w <Enter>
-:map <C-c> y
-:map <C-v> p
-:map <C-x> d
-:map <C-z> u
-:map <C-t> :tabnew <Enter>
-:map <C-i> >>
-:map <C-w> :close <Enter>
-:map <C-W> :q! <Enter>
-:map <C-f> /
-:map <F3> n
-:map <C-h> :%s/
-:map <S-t> vat
-:map <S-T> vit
-:map <S-{> vi{
-:map <S-(> vi(
-:map <S-[> vi[
-
-:set number
+map <S-k> 10k
+map <S-j> 10j
+map <S-Right> :tabn<CR>
+map <S-Left>  :tabp<CR>
+map <C-m> :NERDTreeToggle<CR>
+map <C-f> /
