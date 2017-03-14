@@ -5,8 +5,8 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-fugitive'
-Plugin 'dracula/vim'
 Plugin 'Shougo/neocomplete'
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
@@ -23,11 +23,13 @@ set incsearch
 
 set number
 set mouse=a
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=1000
+set ttimeoutlen=10
 
-set background=dark
+let g:rehash256 = 1
+"let g:molokai_original = 1
 syntax on
-color dracula
+color molokai
 
 set backspace=indent,eol,start
 
